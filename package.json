@@ -15,7 +15,7 @@
     "test": "yarn build && ./scripts/test.sh",
     "publish_npm": "./scripts/publish.sh"
   },
-  "dependencies" :{
+  "dependencies": {
     "jasmine-marbles": "0.1.0"
   },
   "devDependencies": {
@@ -49,10 +49,13 @@
   },
   "author": "Victor Savkin",
   "license": "MIT",
-  "jest" : {
+  "jest": {
     "modulePathIgnorePatterns": [
       "tmp",
       "files"
     ]
-  }
-}
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}\n
